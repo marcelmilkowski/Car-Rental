@@ -1,0 +1,127 @@
+﻿<UserControl x:Class="Wypoyczalnia2.ReservationView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Wypoyczalnia2"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="600">
+    <Grid Background="#FF16161A">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="70"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="70"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="60"/>
+
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="1" Grid.Column="1" CornerRadius="15" Background="#242629" Width="460" HorizontalAlignment="Center" VerticalAlignment="Top" Height="56" Margin="0,32,0,0">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="62*"/>
+                    <ColumnDefinition Width="11*"/>
+                    <ColumnDefinition Width="49*"/>
+                    <ColumnDefinition Width="56*"/>
+                    <ColumnDefinition Width="69*"/>
+                    <ColumnDefinition Width="52*"/>
+                    <ColumnDefinition Width="59*"/>
+                    <ColumnDefinition Width="91*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Content="Marka" Foreground="#FFFFF0F0" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="9" Height="22" Width="34"/>
+                <Label Content="Model" Grid.Column="2" Foreground="#FFFFF0F0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="9" Height="22" Width="36"/>
+                <Label Content="Paliwo" Grid.Column="3" Foreground="#FFFFF0F0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="9" Height="22" Width="36"/>
+                <Label Content="Cena (zl/dzień)" Grid.Column="4" Foreground="#FFFFF0F0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="9" Height="22" Width="68"/>
+                <Label Content="Klasa" Grid.Column="5" Foreground="#FFFFF0F0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="9" Height="22" Width="30"/>
+                <Label Content="Rok Produkcji" Grid.Column="6" Foreground="#FFFFF0F0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="9" Height="22" Width="64"/>
+                <Label Content="Skrzynia" Grid.Column="7" Foreground="#FFFFF0F0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="9" Height="22" Width="44"/>
+
+                <Border Grid.ColumnSpan="8" Height="1" Background="#FF16161A" VerticalAlignment="Top" Margin="0,4,0,0" Grid.Row="1"/>
+
+                <TextBlock x:Name="Brand" Grid.Row="1" Foreground="#FFFFF0F0" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" Height="14" Margin="30,0,0,0"/>
+                <TextBlock x:Name="Model" Grid.Row="1" Grid.Column="2" Foreground="#FFFFF0F0" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" Height="14"/>
+                <TextBlock x:Name="TypeOfFuel" Grid.Row="1" Grid.Column="3" Foreground="#FFFFF0F0" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" Height="14"/>
+                <TextBlock x:Name="Price" Grid.Row="1" Grid.Column="4" Foreground="#FFFFF0F0" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" Height="14"/>
+                <TextBlock x:Name="Class" Grid.Row="1" Grid.Column="5" Foreground="#FFFFF0F0" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" Height="14"/>
+                <TextBlock x:Name="Year" Grid.Row="1" Grid.Column="6" Foreground="#FFFFF0F0" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" Height="14"/>
+                <TextBlock x:Name="Gearbox" Grid.Row="1" Grid.Column="7" Foreground="#FFFFF0F0" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" Height="14"/>
+            </Grid>
+        </Border>
+
+
+
+        <Border Grid.Row="2" Grid.Column="1" CornerRadius="15" Background="#242629" Width="460" HorizontalAlignment="Center" VerticalAlignment="Center" Height="78">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height =" *"/>
+                    <RowDefinition Height =" *"/>
+                </Grid.RowDefinitions>
+
+                <Label Content="Imię" Foreground="#FFFFF0F0" HorizontalAlignment="Center"/>
+                <Label Grid.Column="1" Content="Naziwsko" Foreground="#FFFFF0F0" HorizontalAlignment="Center"/>
+                <Label Grid.Column="2" Content="Email" Foreground="#FFFFF0F0" HorizontalAlignment="Center"/>
+                <Label Grid.Column="3" Content="Numer telefonu" Foreground="#FFFFF0F0" HorizontalAlignment="Center"/>
+
+                <Border Grid.ColumnSpan="8" Height="1" Background="#FF16161A" VerticalAlignment="Top" Grid.Row="1"/>
+
+                <TextBox x:Name="NameBox"  Grid.Column="0" Grid.Row="1" Foreground="#FFFFF0F0" Background="{x:Null}" BorderBrush="#FF16161A" Margin="19,5,10,10" SelectionBrush="#FFFFF0F0" />
+                <TextBox  x:Name="LastNameBox" Grid.Column="1" Grid.Row="1" Foreground="#FFFFF0F0" Background="{x:Null}" BorderBrush="#FF16161A" Margin="10,5,10,10" SelectionBrush="#FFFFF0F0"/>
+                <TextBox  x:Name="EmailBox" Grid.Column="2" Grid.Row="1" Foreground="#FFFFF0F0" Background="{x:Null}" BorderBrush="#FF16161A" Margin="10,5,10,10" SelectionBrush="#FFFFF0F0"/>
+                <TextBox  x:Name="NumberBox" Grid.Column="3" Grid.Row="1" Foreground="#FFFFF0F0" Background="{x:Null}" BorderBrush="#FF16161A" Margin="10,5,19,10" SelectionBrush="#FFFFF0F0"/>
+
+            </Grid>
+        </Border>
+
+        <Border Grid.Row="3" Grid.Column="1" CornerRadius="15" Background="#242629" Width="460" HorizontalAlignment="Center" VerticalAlignment="Center" Height="78">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="20"/>
+                    <ColumnDefinition Width="200"/>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="160"/>
+                </Grid.ColumnDefinitions>
+
+
+                <Label Grid.Column="1" Content="Ilość dni" Foreground="#FFFFF0F0" HorizontalAlignment="Center" Margin="0,0,0,39"/>
+                <TextBox x:Name="DaysTextBox"  Grid.Column="1" Foreground="#FFFFF0F0" Background="{x:Null}" BorderBrush="#FF16161A" Margin="44,29,44,29" SelectionBrush="#FFFFF0F0" TextChanged="DaysTextBox_TextChanged"/>
+
+                <TextBlock Text="Cena wynosi: " Grid.Column="1" Foreground="#FFFFF0F0" Margin="44,54,76,0" />
+                <TextBlock x:Name="PriceTextBlock" Text=" zł" Grid.Column="1" Foreground="#FFFFF0F0" Margin="117,54,117,0" Grid.ColumnSpan="3" />
+
+                <Button Click="ReservationButton_Clicked" Content="Rezerwuj" Grid.Column="3" Margin="60,14,-10,14"/>
+
+
+            </Grid>
+
+
+
+        </Border>
+
+
+        <Label Content="Samochód" HorizontalAlignment="Left" Margin="54,38,0,0" VerticalAlignment="Top" Foreground="#FFFFF0F0" FontSize="30" Grid.ColumnSpan="2"/>
+
+
+
+    </Grid>
+
+
+</UserControl>

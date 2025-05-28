@@ -24,3 +24,4 @@ C:\Users\marce\OneDrive\Dokumenty\Projects\c#\Wypoyczalnia2\Wypoyczalnia2\obj\De
 C:\Users\marce\OneDrive\Dokumenty\Projects\c#\Wypoyczalnia2\Wypoyczalnia2\obj\Debug\net8.0-windows\ReservationView.baml
 C:\Users\marce\OneDrive\Dokumenty\Projects\c#\Wypoyczalnia2\Wypoyczalnia2\obj\Debug\net8.0-windows\PageReservationView.g.cs
 C:\Users\marce\OneDrive\Dokumenty\Projects\c#\Wypoyczalnia2\Wypoyczalnia2\obj\Debug\net8.0-windows\PageReservationView.baml
+C:\Users\marce\OneDrive\Dokumenty\Projects\c#\Wypoyczalnia2\Wypoyczalnia2\obj\Debug\net8.0-windows\Wypoyczalnia2.sourcelink.json
